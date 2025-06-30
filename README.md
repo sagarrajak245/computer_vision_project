@@ -10,6 +10,28 @@ Given a 15-second video (`15sec_input_720p.mp4`), identify each player and ensur
 
 ---
 
+## 📦 Model Weights
+
+This project uses custom-trained weights for best performance. Please download them from the links below:
+
+### 🎯 1️⃣ YOLO Player/Ball Detection Model
+
+* **Description**: Fine-tuned YOLO model (`best.pt`) for detecting tennis players and the ball.
+* **Download Link**: [best.pt on Google Drive](https://drive.google.com/file/d/1-5fOSHOSB9UXyP_enOoZNAMScrePVcMD/view)
+
+---
+
+### 🧭 2️⃣ Player Re-Identification Model
+
+* **Description**: OSNet-based appearance model for player ReID (used in StrongSORT / DeepSORT tracking).
+* **Download Link**: [OSNet Weights on Google Drive](https://drive.google.com/file/d/1QjEu6KJNcPLLij2nKMlJ6Xlke0V9IkdI/view?usp=sharing)
+
+---
+
+> ⚠️ Note: These files are large and hosted externally due to GitHub's file size limitations. Please download them manually and place them in the appropriate directory specified in the code.
+
+---
+
 ## Method 1: ByteTrack IOU Method
 
 ### Overview
