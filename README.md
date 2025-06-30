@@ -380,6 +380,10 @@ nn_budget = 300                   # Rich appearance memory
 * **IoU + Appearance Fusion**: Robust association using both spatial and appearance metrics.
 
 ---
+##You can download it automatically using the BoxMOT CLI:
+```bash
+boxmot track --reid-model osnet_x0_25_msmt17.pt
+```
 
 ### Key Algorithm Components
 
