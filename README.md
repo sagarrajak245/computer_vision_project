@@ -635,6 +635,23 @@ This folder contains example output videos demonstrating the player and ball det
 > 📌 These videos showcase the results of the pipeline, including consistent player IDs and tracked ball trajectories.
 
 ---
+## 🎥 Output result:
 
+* bytetrack+iou method:
+  
+![image](https://github.com/user-attachments/assets/4be50443-52a2-4ef6-862d-ecbde170701d)
+
+* yolo + deepsort method:
+
+  ![image](https://github.com/user-attachments/assets/c093171b-c6d5-4915-87ef-cef51372c5c3)
+
+
+* yolo + strong sort method:
+
+  ![image](https://github.com/user-attachments/assets/f2a13ccc-c5d4-475d-83d4-d309fa1cb443)
+
+
+
+---
 
 
