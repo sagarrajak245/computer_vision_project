@@ -33,6 +33,12 @@ This project uses custom-trained weights for best performance. Please download t
 
 ---
 
+## your folder structure will be like this:
+
+<img width="506" height="416" alt="image" src="https://github.com/user-attachments/assets/e655f86b-358e-4957-9ac1-de8448df3310" />
+
+
+
 ## Method 1: ByteTrack IOU Method
 
 ### Overview
