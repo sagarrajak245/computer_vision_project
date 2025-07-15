@@ -37,6 +37,39 @@ This project uses custom-trained weights for best performance. Please download t
 
 <img width="506" height="416" alt="image" src="https://github.com/user-attachments/assets/e655f86b-358e-4957-9ac1-de8448df3310" />
 
+## 🚀 Quick Start
+
+Follow these steps to set up and run **any of the tracking modules**:
+
+---
+
+### 1️. Clone this repository:
+
+```bash
+git clone https://github.com/sagarrajak245/computer_vision_project.git
+cd computer_vision_project
+```
+### 2️. Create a virtual environment:
+``` bash
+python -m venv myenv
+
+myenv\Scripts\activate
+
+```
+### 3. Install all required packages:
+```bash
+pip install -r requirements.txt
+
+
+```
+### 4.Run files:
+```bash
+python deepsort.py
+python bytetrack.py
+python strongsort.py
+
+
+```
 
 
 ## Method 1: ByteTrack IOU Method
