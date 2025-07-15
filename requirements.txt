@@ -1,89 +1,95 @@
 # Core Computer Vision and Deep Learning
-torch>=2.0.0
-torchvision>=0.15.0
-ultralytics>=8.0.0
-opencv-python>=4.8.0
-numpy>=1.21.0
+torch
+torchvision
+ultralytics
+opencv-python
+numpy
 
 # Object Detection and Tracking
-supervision>=0.16.0
-yolov8
+supervision
+# Removed 'yolov8' – it's NOT an official package; 'ultralytics' already includes YOLOv8
 
 # Multi-Object Tracking Libraries
 # ByteTrack (included in supervision)
-deep-sort-realtime>=1.3.0
-boxmot>=10.0.0
+deep-sort-realtime
+boxmot
 
 # Re-identification Models for StrongSORT
 # Note: OSNet weights need to be downloaded separately
-#wget https://github.com/KaiyangZhou/deep-person-reid/releases/download/v1.3.0/osnet_x0_25_msmt17.pt
+# You can download them using the BoxMOT CLI:
+# boxmot track --reid-model osnet_x0_25_msmt17.pt
 
 # Image Processing and Utilities
-Pillow>=9.0.0
-matplotlib>=3.5.0
-seaborn>=0.11.0
+Pillow
+matplotlib
+seaborn
 
 # Data Handling
-pandas>=1.5.0
-scipy>=1.9.0
+pandas
+scipy
 
 # Video Processing
-moviepy>=1.0.3
-imageio>=2.25.0
-imageio-ffmpeg>=0.4.8
+moviepy
+imageio
+imageio-ffmpeg
 
 # System and File Handling
-pathlib2>=2.3.7
-tqdm>=4.64.0
-requests>=2.28.0
-urllib3>=1.26.0
+pathlib2
+tqdm
+requests
+urllib3
 
 # GPU Acceleration (Optional - for CUDA support)
-# Uncomment if you have NVIDIA GPU and want CUDA acceleration
-# torch-audio>=2.0.0
-# torchaudio>=2.0.0
+# Uncomment the following if you have NVIDIA GPU and CUDA toolkit installed
+# torch-audio
+# torchaudio
 
 # Development and Debugging
-ipython>=8.0.0
-jupyter>=1.0.0
+ipython
+jupyter
 
 # Additional utilities that might be needed
-psutil>=5.9.0
-logging
-collections
-time
-os
-sys
-argparse
-json
-yaml>=6.0
-pyyaml>=6.0
+psutil
+pyyaml
+# Removed 'yaml' – it's NOT a real pip package
+
+# Note: Some packages like 'collections', 'time', 'os', 'sys', 'argparse', 'json'
+# are built-in Python modules and don't need to be installed via pip
 
 # Optional: For advanced visualization
-plotly>=5.15.0
-dash>=2.10.0
+plotly
+dash
 
 # Optional: For performance monitoring
-memory-profiler>=0.60.0
-line-profiler>=4.0.0
-
-# Note: Some packages like 'collections', 'time', 'os', 'sys' are built-in Python modules
-# and don't need to be installed via pip
+memory-profiler
+line-profiler
 
 # Installation Instructions:
-# 1. Create virtual environment: python -m venv cv_tracking_env
+# 1. Create virtual environment:
+#       python -m venv cv_tracking_env
+#
 # 2. Activate environment: 
-#    - Windows: cv_tracking_env\Scripts\activate
-#    - Linux/Mac: source cv_tracking_env/bin/activate
-# 3. Install requirements: pip install -r requirements.txt
-# 4. Download StrongSORT weights:
-#    wget https://github.com/KaiyangZhou/deep-person-reid/releases/download/v1.3.0/osnet_x0_25_msmt17.pt
-# 5. Ensure your YOLO model weights are in the correct path: model/best.pt
+#       - Windows: cv_tracking_env\Scripts\activate
+#       - Linux/Mac: source cv_tracking_env/bin/activate
+#
+# 3. Install requirements:
+#       pip install -r requirements.txt
+#
+# 4. Download StrongSORT weights (for person ReID models):
+#       wget https://github.com/KaiyangZhou/deep-person-reid/releases/download/v1.3.0/osnet_x0_25_msmt17.pt
+#
+# 5. Ensure your YOLO model weights are in the correct path:
+#       model/best.pt
 
-# Platform-specific notes:
-# - On Windows, you might need to install Visual Studio Build Tools
-# - On Linux, you might need to install additional system packages:
-#   sudo apt-get update
-#   sudo apt-get install python3-dev python3-pip
-#   sudo apt-get install libglib2.0-0 libsm6 libxext6 libxrender-dev libgl1-mesa-glx
-# - For GPU support on Linux, install CUDA toolkit separately
+# Platform-specific Notes:
+# - On Windows:
+#     - You might need to install Visual Studio Build Tools for compiling some packages.
+#
+# - On Linux:
+#     - Install system-level packages (before pip install):
+#         sudo apt-get update
+#         sudo apt-get install python3-dev python3-pip
+#         sudo apt-get install libglib2.0-0 libsm6 libxext6 libxrender-dev libgl1-mesa-glx
+#
+# - For GPU support on Linux:
+#     - Make sure you have installed the correct version of the CUDA toolkit compatible with PyTorch.
