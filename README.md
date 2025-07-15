@@ -13,7 +13,7 @@ Given a 15-second video (`15sec_input_720p.mp4`), identify each player and ensur
 ## 📦 Model Weights
 
 This project uses custom-trained weights for best performance. Please download them from the links below:
-# create model folder and then inside them download these models
+# create model folder and then inside download these models-
 
 ### 🎯 1️⃣ YOLO Player/Ball Detection Model
 
